@@ -1,0 +1,23 @@
+.container_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+    box-shadow: 0 5px 10px rgba(12, 9, 9, 0.22);
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+
+    .header_logo {
+        height: 3rem;
+    }
+
+    .link{
+        text-decoration: none;
+        margin-right: 2rem;
+        font-size: 20px;
+        color: #000;
+    }
+}

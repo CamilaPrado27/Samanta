@@ -1,0 +1,102 @@
+.titulo_home{
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 58px;
+    color: #D5F5EE;
+    margin-bottom: 0;
+}
+
+.container_main_home{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+    
+
+    .link_plantinha{
+        text-decoration: none;
+        .container_post{
+            background-color: #F5F5F5;
+            height: 25rem;
+            width: 20rem;
+            margin: 20px ;
+            border-radius: 20px;
+            box-shadow: 0 5px 10px #0c090938;
+    
+            .container_img{
+                display: flex;
+                justify-content: center;
+                padding-top: 3rem;
+    
+                .img_plantinha{
+                    width: 13rem;
+                    height: 13rem;
+                }
+            }
+    
+            .infos_plantinha{
+                text-align: center;
+                .nome_platinha{
+                    font-size: 25px;
+                    font-weight: 500;
+                    margin: 2rem 0 0 0;
+                    color: #00483d;
+                }
+                .descricao_platinha{
+                    font-weight: 300;
+                    font-size: 15px;
+                    margin: 0.5rem 0 0 0;
+                    color: #00483d;
+                }
+            }
+        }
+    }
+
+    
+
+    .container_adicionar_post{
+        background-color: #2A9681;
+        height: 25rem;
+        width: 20rem;
+        margin: 20px ;
+        border-radius: 20px;
+        box-shadow: 0 5px 10px #0c090938;
+        text-decoration: none;
+
+        .p_adicionar_plantinha{
+            margin: 0;
+            padding-top: 6rem;
+            font-weight: 400;
+            font-size: 25px;
+            text-align: center;
+            color: #F5F5F5;
+        }
+        .h2_plus{
+            margin: 0;
+            font-weight: 400;
+            font-size:4rem;
+            text-align: center;
+            color: #F5F5F5;
+        }
+        
+
+    }
+    .container_adicionar_post:hover{
+        cursor: pointer;
+        transition: 0.5s;
+        transform: scale(1.03);
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    .container_main_home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0; 
+    }
+}

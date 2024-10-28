@@ -1,0 +1,104 @@
+.container_main_notFound{
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    .div__container_left{
+        width: 50%;
+        height: 100vh;
+        background-color: #f5f5f5;
+        border-radius: 0 20px 20px 0;
+        text-align: center;
+    
+        .img_notFound_platinha{
+    
+            padding-top: 40%;
+            text-align: center;
+            width: 12rem;
+            height: 12rem;
+        }
+    }
+
+    .div__container_right{
+        width: 50%;
+        height: 100vh;
+
+
+        .p_erro_404{
+            padding-top: 25%;
+            font-size: 70px;
+            font-weight: 500;
+            color: #d5f5ee;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        .p_erro_mensagem{
+            font-size: 25px;
+            font-weight: 500;
+            color: #d5f5ee;
+            text-align: center;
+        }
+
+        .link_notFound_voltar_home{
+            text-decoration: none;
+            color: #d5f5ee;
+            .div_notFound_voltar_home{
+                margin-top: 2rem;
+                width: 30%;
+                height: 4rem;
+                background-color: #2A9681;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 20px;
+                box-shadow: 0 5px 10px #0c090938;
+    
+                .p_notFound_voltar_home{
+                    text-align: center;
+                    padding-top: 1.25rem;
+                }
+            }
+            .div_notFound_voltar_home:hover{
+                cursor: pointer;
+                transition: 0.5s;
+                transform: scale(0.95);
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container_main_notFound{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .div__container_left{
+            height: 50vw;
+            width: 50vw;
+            border-radius: 100%;
+            margin-top: 5vh;
+
+            justify-content: center;
+
+            .img_notFound_platinha{
+                padding-top: 20%;
+
+                height: 30vw;
+                width: 30vw;
+            }
+        }
+
+        .div__container_right{
+            width: 100vw;
+            .p_erro_404{
+                padding-top: 0;
+                font-size: 40px;
+            }
+            .p_erro_mensagem{
+                font-size: 20px;
+            }
+            .div_notFound_voltar_home{
+                width: 50%;
+            }
+        }
+    }
+}

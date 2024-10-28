@@ -1,0 +1,80 @@
+.container_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+
+    .container_form {
+        width: 95vw;
+        height: 80vh;
+        background-color: #fafafa;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .input{
+            height: 2rem;
+            width: 15rem;
+            font-size: 16px;
+            border-radius: 12px;
+            padding-left: 1rem;
+            border: 1px solid #2A9681
+        }
+        .text{
+            color: #00483D;
+        }
+        .container_plantas{
+
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .bloco_planta{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 13rem;
+                height: 18rem;
+                border: 1px solid #2A9681;
+                margin: 2rem 0 ;
+                border-radius: 12px;
+                box-shadow: 0 5px 10px rgba(12, 9, 9, 0.22);
+                background-color: transparent;
+                cursor: pointer;
+
+                .img{
+                    height: 70%;
+                }
+
+                .text{
+                    color: #00483D;
+                    margin: 0.5rem 0 0 0 ;
+                }
+            }
+            .selecionado{
+                background-color: #2a968025;
+            }
+            
+        }
+
+        .cadastrar_vaso{
+            height: 3rem;
+            width: 12rem;
+            background-color: #2A9681;
+            color: #fafafa;
+            cursor: pointer;
+            border-radius: 6.25rem;
+            border: none;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+        .cadastrar_vaso:hover{
+            background-color: #206f5f;
+        }
+    }
+    
+
+
+}
